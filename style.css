@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-family: Londrina Solid;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: 20px;
+}
+.thumb {
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.loader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
